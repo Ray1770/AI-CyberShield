@@ -1,7 +1,7 @@
 # AI-CyberShield
 
 
-**CyberSentinel** AI is a real-time website threat detection Chrome extension powered by machine learning and integrated with external threat intelligence sources like Google Safe Browsing, VirusTotal, and SSL certificate validation.
+**CyberShield** AI is a real-time website threat detection Chrome extension powered by machine learning and integrated with external threat intelligence sources like Google Safe Browsing, VirusTotal, and SSL certificate validation.
 
 ##  Features
 - 🌐 Real-time URL scanning with AI (Random Forest)
