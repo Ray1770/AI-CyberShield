@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CyberShield Web Scanner</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .spinner {
+      border: 4px solid #f3f3f3;
+      border-top: 4px solid #007BFF;
+      border-radius: 50%;
+      width: 30px;
+      height: 30px;
+      animation: spin 1s linear infinite;
+      margin: auto;
+    }
+    
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+    
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body style="width: 400px; max-width: 400px; margin: 0 auto; font-family: Arial, sans-serif;">
+
+  <header style="background-color: #007BFF; color: white; padding: 15px 0; text-align: center;">
+    <h1 style="margin: 0; font-size: 24px;">CyberShield</h1>
+    <p style="margin: 0; font-size: 14px;">Stay Protected, Browse Confidently</p>
+  </header>
+
+  <main style="padding: 15px;">
+    <section style="margin-bottom: 20px;">
+      <h2 style="font-size: 18px; color: #007BFF;">Fast AI Scan</h2>
+      <p id="backgroundScanResult" style="font-size: 14px;">Loading scan result...</p>
+    </section>
+
+    <section style="margin-bottom: 20px;">
+      <button id="advancedScanButton" style="padding: 10px 20px; font-size: 16px; background-color: #28a745; border: none; color: white; border-radius: 5px; cursor: pointer; transition: background 0.3s;">Advanced Deep Scan</button>
+      
+      <div id="loader" class="hidden" style="margin-top: 10px;">
+        <div class="spinner"></div>
+        <p style="font-size: 14px; text-align: center;">⏳ Scanning...</p>
+      </div>
+
+      <p id="advancedResult" style="font-size: 14px; margin-top: 10px;">Status: Not scanned</p>
+
+      <!-- SSL + VirusTotal Info Section -->
+      <div id="sslInfo" style="margin-top: 15px; font-size: 13px;"></div>
+
+    </section>
+  </main>
+
+  <footer style="background-color: #f1f1f1; text-align: center; padding: 10px; font-size: 12px; color: #666;">
+    Powered by CyberShield AI 🔒
+  </footer>
+
+  <script src="popup.js"></script>
+</body>
+</html>
